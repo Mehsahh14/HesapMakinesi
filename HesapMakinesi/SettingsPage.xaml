@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HesapMakinesi.SettingsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Ayarlar"
+    BackgroundColor="{AppThemeBinding Light={StaticResource LightPageBackground},
+                                      Dark={StaticResource DarkPageBackground}}">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+       
+        <Label
+            Text="Görünüm Ayarları"
+            Style="{StaticResource SettingsTitleStyle}"
+            TextColor="{AppThemeBinding Light={StaticResource LightButtonText},
+                                        Dark={StaticResource DarkButtonText}}" />
+
+        
+        
+        <Picker
+            x:Name="ThemePicker"
+            Title="Tema seçiniz"
+            SelectedIndexChanged="OnThemeChanged"
+            TextColor="{AppThemeBinding Light={StaticResource LightButtonText},
+                                        Dark={StaticResource DarkButtonText}}"
+            TitleColor="{AppThemeBinding Light={StaticResource LightButtonText},
+                                         Dark={StaticResource DarkButtonText}}"
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightDisplayBackground},
+                                              Dark={StaticResource DarkDisplayBackground}}">
+
+            <Picker.Items>
+                <x:String>Açık Tema</x:String>
+                <x:String>Koyu Tema</x:String>
+                <x:String>Sistem ayarını kullan</x:String>
+            </Picker.Items>
+
+        </Picker>
+
+    </VerticalStackLayout>
+
+</ContentPage>

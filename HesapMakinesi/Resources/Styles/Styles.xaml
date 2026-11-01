@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    
+    <Style x:Key="BaseButtonStyle"
+           TargetType="Button">
+
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="Margin" Value="3" />
+
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource LightButtonText},
+                                        Dark={StaticResource DarkButtonText}}" />
+
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource LightButtonBackground},
+                                        Dark={StaticResource DarkButtonBackground}}" />
+
+    </Style>
+
+    
+    <Style TargetType="Button"
+           BasedOn="{StaticResource BaseButtonStyle}" />
+
+    
+    <Style x:Key="NumberButtonStyle"
+           TargetType="Button"
+           BasedOn="{StaticResource BaseButtonStyle}">
+
+        <Setter Property="FontSize" Value="24" />
+
+    </Style>
+
+    
+    <Style x:Key="OperationButtonStyle"
+           TargetType="Button"
+           BasedOn="{StaticResource BaseButtonStyle}">
+
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource LightOperationBackground},
+                                        Dark={StaticResource DarkOperationBackground}}" />
+
+    </Style>
+
+   
+    <Style x:Key="EqualButtonStyle"
+           TargetType="Button"
+           BasedOn="{StaticResource BaseButtonStyle}">
+
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource LightAccent},
+                                        Dark={StaticResource DarkAccent}}" />
+
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource LightAccentText},
+                                        Dark={StaticResource DarkAccentText}}" />
+
+        <Setter Property="FontAttributes" Value="Bold" />
+
+    </Style>
+
+   
+    <Style x:Key="DisplayLabelStyle"
+           TargetType="Label">
+
+        <Setter Property="FontSize" Value="42" />
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+
+    </Style>
+
+    
+    <Style x:Key="DescriptionLabelStyle"
+           TargetType="Label">
+
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+
+    </Style>
+
+   
+    <Style x:Key="SettingsTitleStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+    
+    <Style x:Key="SettingsLabelStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+</ResourceDictionary>
