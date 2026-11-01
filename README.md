@@ -102,8 +102,8 @@ Uygulamada üç ana sayfa bulunmaktadır:
 ### Bilimsel Hesap Makinesi
 ![Bilimsel Hesap Makinesi](Images/Bilimsel.jpeg)
 
-### Ayarlar
-![Ayarlar](Images/KaranlıkTema.jpeg)
+### Karanlık Tema
+![Karanlık Tema](Images/KaranlıkTema.jpeg)
 
 
 
